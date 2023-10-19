@@ -1,0 +1,143 @@
+*{
+    --yellow: #FFC540;
+    --green: #538F90;
+    --red: crimson;
+    --white: #fff;
+}
+
+.body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.landing{
+    background-image: url(parallex.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+}
+
+#logo{
+    flex: 3;
+    font-size: 3.25em;
+    font-weight: bolder;
+
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 10vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: rgb(241, 18, 14);
+    color: var(--white);
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+}
+
+#menuheading,#LocationHeading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5em;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.Location{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Location h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+
+.Location{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+
